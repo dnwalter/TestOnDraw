@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="238dp"
+                                             android:layout_height="94.5dp"
+                                             android:background="#FA9C3B">
+
+    <ImageView
+        android:id="@+id/msgview_iv_cover"
+        android:layout_width="0dp"
+        android:layout_height="70.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/testtest"
+        app:layout_constraintDimensionRatio="w, 534:210"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/msgview_cl_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/msgview_rl_info"
+            android:layout_width="match_parent"
+            android:layout_height="23.5dp"
+            android:background="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/msgview_tv_broker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:textColor="#c0c0c0"
+                android:textSize="12sp"
+                android:text="FX110"/>
+
+            <TextView
+                android:id="@+id/msgview_tv_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="金币"
+                android:textColor="#c0c0c0"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/msgview_iv_redpocket_icon"
+            android:layout_width="32dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="14dp"
+            android:background="#00ff00"
+            app:layout_constraintBottom_toTopOf="@id/msgview_rl_info"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/msgview_tv_leave_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:text="恭喜发财"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@id/msgview_iv_redpocket_icon"
+            app:layout_constraintTop_toTopOf="@id/msgview_iv_redpocket_icon"/>
+
+        <TextView
+            android:id="@+id/msgview_tv_redpocket_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="查看金币"
+            android:textColor="#ccffffff"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/msgview_iv_redpocket_icon"
+            app:layout_constraintLeft_toRightOf="@id/msgview_iv_redpocket_icon"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
